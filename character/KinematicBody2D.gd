@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+
 export (int) var speed = 200
 
 var target = Vector2()
@@ -24,4 +25,3 @@ func _physics_process(delta):
 		# look_at(target)
 		if position.distance_to(target) > 5:
 			velocity = move_and_slide(velocity)
-
